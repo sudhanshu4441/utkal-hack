@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/first.css">
+  <link href="css/slider.css" type="text/css" rel="stylesheet">
+  <link href="css/nav.css" type="text/css" rel="stylesheet">
+  
+  </head>
+  
+<style>
+.container
+{
+    width:80px
+    background-color:rgba(149, 165, 166,0.5);
+	border-radius:5px;
+	text-align:center;
+	margin:0 auto;
+	margin-top:-285px;
+	margin-left: 600px;
+}
+
+</style>
+
+<body>
+<div class="container-fluid">
+	<div id="logo">
+		<img src="photo/The-plough-manufacturer.jpg" align="left" height="60px" width="100px" hspace="15">
+		<a href="location.html"><img src="icons/location.png" align="right" height="80px" width="80px" hspace="15"></a>
+	</div>
+<div id="heading">
+	<span class="notranslate">
+	<center>Krishi Hal</center>
+	</span>
+</div>
+<div id="weather">
+	<a class="weatherwidget-io" href="https://forecast7.com/en/20d4685d88/cuttack/" data-label_1="CUTTACK" data-label_2="WEATHER" data-icons="Climacons Animated" data-theme="blue-mountains" >CUTTACK WEATHER</a>
+	<script>
+		!function(d,s,id)
+		{
+			var js,fjs=d.getElementsByTagName(s)[0];
+			if(!d.getElementById(id))
+			{
+				js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);
+			}
+		}(document,'script','weatherwidget-io-js');
+	</script>
+</div>
+
+<div>
+
+	<nav id="nav">
+        <ul>
+			<li class='has-sub'><a href='#'><span>Services</span></a>
+				<ul>
+					<li><a href="http://agricoop.gov.in/" target="blank"><span>Govt. Schemes</span></a></li>
+					<li><a href="https://seednet.gov.in/" target="blank"><span>Seed Dealer</span></a></li>
+					<li><a href="https://pmfby.gov.in/" target="blank"><span>PMFBY</span></a></li>
+					<li><a href="https://cacp.dacnet.nic.in/default.aspx" target="blank"><span>MSP</span></a></li>
+					<li><a href="tel:1-555-555-1212"><span>Kishan Call center</span></a></li>
+					<li><a href="video.html"><span>Videos</span></a></li>
+					
+				</ul>
+			</li>
+            <li><a href="login.html"><img src="icons/login.png" height="50px" width="75px"></a></li>
+			<li><a href="login.html">Login</a></li>			
+            <li><a href="signup.html"><img src="icons/signup.png" height="50px" width="75px"></a></li>
+            <li><a href="signup.html">Signup</a></li>
+			<li><a href="chat.html"><img src="icons/chat.png" height="50px" width="75px"></a></li>
+			<li><a href="chat.html">Chat</a></li>
+			<li>
+			<li><a href="feedback.html"><img src="icons/feedback.png" height="50px" width="75px"></a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+				<div id="google_translate_element" ></div>
+					<script type="text/javascript">
+						function googleTranslateElementInit() {
+						new google.translate.TranslateElement({
+						pageLanguage: 'en'
+						}, 'google_translate_element');
+					}
+
+					</script>	
+						<script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+					</script>
+
+				<div>
+			</li>
+        </ul>
+    </nav>
+
+</div>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="photo/1.jpg" style="width:100%">
+ </div>
+
+<div class="mySlides fade">
+  <img src="photo/2.jpg" style="width:100%">
+  <div class="text">Some of us grow  up playing with tractors,<br>
+the lucky ones still do.
+</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="photo/3.jpg" style="width:100%">
+  <div class="text">The most people this is just a dirt,<br>
+TO a farmer this is potential.</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+	var slideIndex = 0;
+	showSlides();
+
+	function showSlides() 
+	{
+		var i;
+		var slides = document.getElementsByClassName("mySlides");
+	    var dots = document.getElementsByClassName("dot");
+	    for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";  
+    }
+  slideIndex++;
+  if (slideIndex > slides.length) 
+  {
+  slideIndex = 1
+  }    
+  for (i = 0; i < dots.length; i++) 
+  {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 8000); // Change image every 8 seconds
+}
+</script> 
+
+<div class="container">
+
+	 <script type="text/javascript" src="https://news.24-7pressrelease.com/247pr-news-widget.js?widgettitle=&amp;categories=127,128,129,&amp;showRelease=1&amp;width=auto&amp;headlinebold=1&amp;headlinesonly=0&amp;headlinecolor=2d57a1&amp;briefcolor=666666&amp;textcolor=333333&amp;typeface=arial&amp;fontsize=11&amp;width=auto&amp;headlinesepstyle=dotted&amp;showimages=1&amp;numstories=5&amp;bgcolor=ffffff&amp;urldest=local">
+	</script>
+ 
+</div> 
+
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+						
+	<footer>
+		<div id="footer"><span class="notranslate">Designed by Bright Techs<span></div>
+	</footer>
+	
+</body>
+</html>
